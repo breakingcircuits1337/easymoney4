@@ -11,6 +11,7 @@
   port = 9002 # Port that the dev server will be listening on
   publish = ".next" # Folder with static files for dev
   targetPort = 9002 # The port for the preview url
+  framework = "#custom"
 
 # The Netlify Dev server will proxy traffic to your Next.js dev server
 # This is useful for testing serverless functions and redirects locally.
