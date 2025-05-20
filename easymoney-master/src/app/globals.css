@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 50 80% 97%; /* Very light, creamy gold */
+    --foreground: 150 50% 20%; /* Dark, rich green for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 150 50% 20%; /* Dark, rich green */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 150 50% 20%; /* Dark, rich green */
+
+    --primary: 50 100% 50%; /* Bright Gold */
+    --primary-foreground: 150 60% 15%; /* Very dark green for text on gold */
+
+    --secondary: 140 65% 55%; /* Clear, "money" green */
+    --secondary-foreground: 0 0% 100%; /* White for text on secondary */
+
+    --muted: 140 40% 90%; /* Light, minty green */
+    --muted-foreground: 150 30% 40%; /* Medium-dark green-grey */
+
+    --accent: 125 70% 45%; /* Strong, Kelly green */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 50 60% 85%; /* Pale gold border */
+    --input: 50 50% 94%; /* Light creamy input background */
+    --ring: 50 100% 50%; /* Bright Gold for focus rings */
+
+    --chart-1: 50 100% 55%;   /* Strong Gold */
+    --chart-2: 140 60% 50%;   /* Solid Money Green */
+    --chart-3: 50 90% 40%;    /* Deeper Gold */
+    --chart-4: 125 60% 40%;   /* Darker Kelly Green */
+    --chart-5: 45 100% 60%;   /* Rich Yellow-Gold */
+    --radius: 0.5rem;
+
+    --sidebar-background: 50 70% 95%; /* Slightly more saturated light cream */
+    --sidebar-foreground: 150 50% 25%; /* Dark green, slightly lighter than main text */
+    --sidebar-primary: 50 100% 50%; /* Bright Gold */
+    --sidebar-primary-foreground: 150 60% 15%; /* Very dark green */
+    --sidebar-accent: 140 65% 55%; /* Clear, "money" green */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 50 50% 80%; /* Pale gold border */
+    --sidebar-ring: 50 100% 50%; /* Bright Gold */
+  }
+
+  .dark {
+    --background: 150 40% 12%; /* Deep, rich green-black */
+    --foreground: 50 90% 85%; /* Pale, bright gold */
+
+    --card: 150 35% 18%; /* Slightly lighter deep green */
+    --card-foreground: 50 90% 85%; /* Pale, bright gold */
+
+    --popover: 150 35% 15%; /* Dark popover base */
+    --popover-foreground: 50 90% 85%; /* Pale, bright gold */
+
+    --primary: 50 100% 60%; /* Vibrant Gold */
+    --primary-foreground: 150 50% 10%; /* Very dark green, almost black, for text on gold */
+
+    --secondary: 135 60% 45%; /* Bright, "money" green */
+    --secondary-foreground: 135 20% 95%; /* Very light green/white for text on secondary */
+
+    --muted: 150 30% 25%; /* Muted dark green-grey */
+    --muted-foreground: 50 50% 70%; /* Muted gold/grey text */
+
+    --accent: 120 70% 55%; /* Lush, vibrant green */
+    --accent-foreground: 0 0% 100%; /* White, for high contrast on accent */
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 50 70% 35%; /* Dark gold border */
+    --input: 150 30% 22%; /* Dark green input background */
+    --ring: 50 100% 60%; /* Vibrant Gold for focus rings */
+    
+    --chart-1: 50 100% 70%;   /* Lighter Gold */
+    --chart-2: 135 70% 60%;   /* Brighter Money Green */
+    --chart-3: 50 80% 50%;    /* Medium Gold */
+    --chart-4: 120 50% 70%;   /* Lighter Lush Green */
+    --chart-5: 40 100% 75%;   /* Bright Yellow-Gold */
+
+    --sidebar-background: 150 40% 10%; /* Slightly darker than main dark background */
+    --sidebar-foreground: 50 90% 80%; /* Slightly muted pale gold */
+    --sidebar-primary: 50 100% 60%; /* Vibrant Gold */
+    --sidebar-primary-foreground: 150 50% 10%; /* Very dark green */
+    --sidebar-accent: 135 60% 45%; /* Bright, "money" green */
+    --sidebar-accent-foreground: 135 20% 95%; /* Very light green/white */
+    --sidebar-border: 50 70% 30%; /* Dark gold border for sidebar elements */
+    --sidebar-ring: 50 100% 60%; /* Vibrant Gold */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

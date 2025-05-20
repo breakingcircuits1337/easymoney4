@@ -1,0 +1,58 @@
+import type { AffiliateOffer } from '@/types';
+
+export const affiliateOffers: AffiliateOffer[] = [
+  {
+    id: 'magical-tactics',
+    title: 'Magical Tactics (Proven tactics to attract women)',
+    description: "Pick up & Seduction guide paying 70% per sale. This is a long term product which is a proven seller. Don't miss out!",
+    url: 'https://bbad395evcw1ftekz1jrrzwzaz.hop.clickbank.net',
+    imageUrl: '/images/offers/magical-tactics.png',
+    imageHint: 'couple romance',
+    tags: ['relationship advice', 'seduction', 'self-improvement'],
+  },
+  {
+    id: 'pure-natural-manifestation',
+    title: 'Hot New Manifestation offer: Pure Natural Manifestation',
+    description: 'New hook for the Law of Attraction and Manifestation market, based on the transformational energies of the spiritual vortexes at Sedona.',
+    url: 'https://4fb895ug-ds21r4jy6pio7jd0x.hop.clickbank.net',
+    imageUrl: '/images/offers/pure-natural-manifestation.png',
+    imageHint: 'spiritual energy',
+    tags: ['manifestation', 'spirituality', 'law of attraction'],
+  },
+  {
+    id: 'reality-engineering-code',
+    title: 'Reality Engineering Code - Brand New Manifestation Offer!',
+    description: 'A unique manifestation system that activates your "wealth command center" using advanced ultrasound soundwave technology. It targets spiritual inflammation in the hypothalamus for effortless abundance.',
+    url: 'https://3c991-wdmdu8aqejm820lmi95l.hop.clickbank.net',
+    imageUrl: '/images/offers/reality-engineering-code.png',
+    imageHint: 'abstract technology',
+    tags: ['manifestation', 'wealth', 'technology'],
+  },
+  {
+    id: 'instant-wordpress-theme',
+    title: 'Instant WordPress Theme To Match Your Existing Website Design!',
+    description: "World's first automatic and online HTML to WordPress converter. Theme Matcher uses any regular site to instantly and effortlessly create themes.",
+    url: 'https://192adavllar32q8no1xdx6w-iw.hop.clickbank.net',
+    imageUrl: '/images/offers/instant-wordpress-theme.png',
+    imageHint: 'website design',
+    tags: ['wordpress', 'web design', 'make money online'],
+  },
+  {
+    id: 'live-chat-jobs',
+    title: 'Live Chat Jobs - You have to try this one',
+    description: 'Live Chat Jobs. $1 trial, unlimited re-bills, optimized upsell flow, 75% commission on everything. In-house affiliate management team.',
+    url: 'https://d0417--iv1vy0r4rz3svxk0z36.hop.clickbank.net',
+    imageUrl: '/images/offers/live-chat-jobs.png',
+    imageHint: 'remote work',
+    tags: ['work from home', 'make money online', 'customer service'],
+  },
+  {
+    id: 'gpt-creator-club',
+    title: 'The GPT Creator Club',
+    description: 'The GPT Creator Club Is A Brand New DFY Service From John Thornhill & Randy Smith That Provides Monthly GPTs With White Label Rights.',
+    url: 'https://8b2995x9y1w85xa2wlodv7fle0.hop.clickbank.net',
+    imageUrl: '/images/offers/gpt-creator-club.png',
+    imageHint: 'ai technology',
+    tags: ['AI', 'make money online', 'SaaS', 'GPT'],
+  },
+];

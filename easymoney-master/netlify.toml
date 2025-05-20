@@ -1,0 +1,21 @@
+[build]
+  command = "npm install && next build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps" # Add this if peer dependency issues arise
+
+[dev]
+  command = "npm run dev" # Command to start your dev server
+  port = 9002 # Port that the dev server will be listening on
+  publish = ".next" # Folder with static files for dev
+  targetPort = 9002 # The port for the preview url
+
+# The Netlify Dev server will proxy traffic to your Next.js dev server
+# This is useful for testing serverless functions and redirects locally.
+# For Next.js, often the framework handles this well on its own.
+# You might not need `framework = "#static"` if Next.js dev server handles all.
+# If you are using Next.js API routes or advanced features, ensure `targetPort` is correctly set.
+# framework = "#custom" # Using custom as Next.js Runtime on Netlify handles a lot.
+# functions = "netlify/functions" # If you had separate Netlify functions.
