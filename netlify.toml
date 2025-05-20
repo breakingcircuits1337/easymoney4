@@ -1,3 +1,7 @@
+[build]
+  command = "npm install && npm run build"
+  publish = ".next"
+
 toml
 [build]
   command = "npm install && npm run build"
